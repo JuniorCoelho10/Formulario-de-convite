@@ -1,0 +1,110 @@
+input[type=radio] {
+  all: unset;
+  inset: 0;
+  position:absolute; 
+  cursor: pointer;
+  
+  
+}
+
+.radio-wrapper {
+  
+  h3{
+    margin-bottom:.75rem ;
+    color:var(--text-body);
+    font: var(--body-sm);
+  }
+
+
+  & .radio-container {
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    background-color:var(--input-base) ;
+    display: flex;
+    gap: .25rem;
+    padding:.25rem;
+    
+
+    
+    
+    
+    
+  }
+
+  & .radio-inner {
+    display: flex;
+    gap: .5rem;
+    padding:.65rem 1.125rem;
+    position: relative;
+   
+
+    
+    
+    
+
+    & label {
+      align-items: center;
+      color: var(--text-body);
+      margin-bottom: 0;
+    }
+
+   
+    
+  }
+
+
+}
+
+
+.radio-inner:hover, 
+.radio-inner:focus-within,
+.radio-inner:has(:checked)
+{
+
+ 
+    background-color:var(--input-stroke);
+    border-radius:.25rem;
+    
+    
+    
+
+    & svg path {
+      stroke:var(--brand-light);
+    }
+
+    & label {
+    color: var(--text-heading);
+    font-weight: 600;
+
+    }
+  
+} 
+
+
+
+.radio-color-inner{
+  position: relative;
+}
+
+.radio-color-inner:hover {
+  
+  svg rect[fill="#2D3136"] {
+  fill:var(--shape-hover);
+  
+  }
+
+  
+}
+
+.radio-color-inner input[type=radio]:checked {
+   
+  svg path {
+    stroke:red;
+    
+    }
+  
+ 
+}
+
+
+

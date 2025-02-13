@@ -1,0 +1,21 @@
+ legend{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1.5rem;
+
+  & h2{
+    font: var(--heading-sm);
+  }
+}
+
+fieldset {
+  display: grid;
+  gap: 1rem;
+}
+
+
+label {
+  margin-bottom: .75rem;
+
+}

@@ -1,0 +1,81 @@
+@import url(./radio.css);
+
+
+input, textarea, select {
+  appearance: none;
+  width: 100%;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  padding: .81rem 1rem;
+  font: var(--body-md);
+  color: #ffffff;
+  
+  
+  &::placeholder {
+    color:var(--input-placeholder);
+  }
+}
+
+label  {
+  
+  display: block;
+  color: var(--text-body);
+  font: var(--body-sm);
+  
+
+}
+
+input[type=date]{
+  color: var(--input-placeholder);
+
+  &::-webkit-calendar-picker-indicator {
+    opacity:0;
+  }
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+.radio-container:focus-within {
+  outline: 1px solid var(--brand-light);
+}
+
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+ } 
+
+input[required] + .error, 
+textarea[required] + .error {
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+  margin-top: .5rem;
+  
+ 
+
+  span {
+    color:var(--danger);
+  }
+
+  &:valid + .error {
+    display: none;
+  }
+
+
+}
+
+input:invalid,  
+textarea:invalid {
+  
+  outline:1px solid var(--danger);
+  
+  &:focus {
+    outline: 1px solid var(--danger);
+  }
+
+} 
+
+textarea + .error {
+  margin-bottom: 3rem;
+}
+

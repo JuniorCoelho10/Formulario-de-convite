@@ -1,0 +1,81 @@
+
+.checkbox-wrapper {
+  
+
+  h3 {
+    
+    margin-bottom:1rem ;
+    color:var(--text-body);
+    font: var(--body-sm)
+  }
+}
+
+.checkbox-container  {
+  position: relative;
+
+
+
+  & [type="checkbox"] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  }
+}
+
+
+
+
+.switch {
+  position: relative;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  width: 4rem;
+  height: 2rem;
+  border-radius:2.5rem;
+  padding: .25rem;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "Escuro";
+    color: var(--text-heading);
+    font: var(--body-sm);
+    position: absolute;
+    top: .312rem;
+    left: 4.75rem;
+    
+  }
+}
+
+.slider {
+  position: absolute;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  width:1.5rem ;
+  height:1.5rem;
+  transition: all .5s ease-in-out;
+  
+}
+
+#style:checked + .switch {
+  background-color: var(--brand-light);
+
+  &::after {
+    content: 'Claro';
+
+  }
+  
+ 
+  .slider {
+    background-color: #F9F9F9;
+    transform:translateX(30px) ;
+  }
+
+}
+
+.flex:has(.checkbox-wrapper) {
+  gap:1rem ;
+  margin-top: 1.75rem;
+}

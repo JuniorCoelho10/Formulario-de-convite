@@ -2,5 +2,7 @@
 @import url(layout.css);
 @import url(form.css);
 @import url(fields/inputs.css);
+@import url(fields/checkbox.css);
+@import url(fields/droparea.css);
 
 

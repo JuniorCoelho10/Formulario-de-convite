@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   color:var(--text-body);
   font:var(--body-sm);
@@ -57,4 +59,21 @@ img {
 
 .flex-1 {
   flex:1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+  margin-top: .5rem;
+
+  span {
+    color:var(--danger);
+    font: var(--body-xs);
+
+  }
 }

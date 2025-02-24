@@ -1,0 +1,57 @@
+
+.droparea-wrapper {
+  position: relative;
+
+  .dropzone {
+    gap:.5rem;
+    background-color:var(--shape-button);
+    padding: .65rem .75rem;
+    border-radius: .5rem ;
+    
+    
+    
+
+    span {
+      color: var(--text-heading);
+      font: 600 .875rem/normal "Open Sans", serif ;
+    }
+
+    & + span{
+      display: inline-block;
+      color:var(--input-placeholder);
+      font: var(--body-md);
+    }
+
+    &:hover {
+    background-color:var(--input-stroke);
+
+    }
+
+    &:valid {
+      .error {
+        display: none;
+      }
+    }
+  
+  }
+
+  .dropzone input {
+    all: unset;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+  }
+
+}
+
+.flex:has(.dropzone) {
+  align-items: center;
+  gap: .75rem;
+}
+
+
+.styles-container {
+  align-content: center;
+}

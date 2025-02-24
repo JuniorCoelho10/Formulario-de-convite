@@ -46,16 +46,7 @@ textarea:focus {
 
 input[required] + .error, 
 textarea[required] + .error {
-  display: flex;
-  align-items: center;
-  gap:.5rem;
-  margin-top: .5rem;
   
- 
-
-  span {
-    color:var(--danger);
-  }
 
   &:valid + .error {
     display: none;

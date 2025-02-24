@@ -45,12 +45,12 @@
             <div class="flex">
               <div class="input-wrapper flex-1">
                 <label for="start-date">Início</label>
-                <input type="date" id="start-date" name="start-date" onclick="this.showPicker()" >
+                <input type="date" id="start-date" name="start-date" onclick="this.showPicker()">
               </div>
 
               <div class="input-wrapper flex-1">
                 <label for="end-date">Fim</label>
-                <input type="date" id="end-date" name="end-date" onclick="this.showPicker()" >
+                <input type="date" id="end-date" name="end-date" onclick="this.showPicker()">
               </div>
             </div>
 
@@ -97,7 +97,7 @@
 
             <div class="textarea-wrapper">
               <label for="description">Descrição</label>
-              <textarea name="description" id="description"  rows="5" placeholder="Escreva sobre os detalhes do evento" required></textarea>
+              <textarea name="description" id="description" rows="5" placeholder="Escreva sobre os detalhes do evento" required></textarea>
               <div class="error">
                 <img src="./images/icons/circle-alert.svg" alt="icone de alerta">
                 <span>Error message</span>
@@ -114,20 +114,206 @@
             <div class="radio-wrapper">
               <h3>Cor principal</h3>
 
-              <div class="radio-color-container">
-              <div class="radio-color-inner">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="40" height="40" rx="20" fill="#2D3136"/>
-                  <rect x="6" y="6" width="28" height="28" rx="14" fill="#59B2FF"/>
+              <div class="radio-color-container flex">
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#59B2FF" />
                   </svg>
-                  <input type="radio" name="cor"  value="blue" aria-label="Cor azul">
-                  <label for=""></label>
+                  <input type="radio" name="color" value="blue" id="blue" aria-label="Cor azul">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#6A59FF" />
+                  </svg>
+                  <input type="radio" name="color" value="navy" id="navy" aria-label="Cor azul marinha">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#B259FF" />
+                  </svg>
+                  <input type="radio" name="color" value="purple" id="purple" aria-label="Cor roxo">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#FF59F9" />
+                  </svg>
+                  <input type="radio" name="color" value="fuschia" id="fuschia" aria-label="Cor fúcsia">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#FF598B" />
+                  </svg>
+                  <input type="radio" name="color" value="pink" id="pink" aria-label="Cor rosa">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#FF5959" />
+                  </svg>
+                  <input type="radio" name="color" value="danger" id="danger" aria-label="Cor vermelha">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#FF8B59" />
+                  </svg>
+                  <input type="radio" name="color" value="orange" id="orange" aria-label="Cor laranja">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#FFCD59" />
+                  </svg>
+                  <input type="radio" name="color" value="yellow" id="yellow" aria-label="Cor amarela">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#E1FF59" />
+                  </svg>
+                  <input type="radio" name="color" value="lime" id="lime" aria-label="Cor lima">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#59FF91" />
+                  </svg>
+                  <input type="radio" name="color" value="green" id="green" aria-label="Cor verde">
+                </div>
+
+                <div class="radio-color-inner">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#2D3136" />
+                    <rect x="6" y="6" width="28" height="28" rx="14" fill="#59FFF9" />
+                  </svg>
+                  <input type="radio" name="color" value="cyan" id="cyan" aria-label="Cor ciano">
+                </div>
+              </div>
+            </div>
+
+            <div class="radio-wrapper">
+              <h3>Tema do evento</h3>
+              <div class="radio-theme-container flex">
+
+                <div class="radio-theme-inner">
+                  <img src="./images/aniversario.png" alt="">
+                  <input type="radio" name="theme" value="birthday" id="birthday" aria-label="Tema de Aniversario">
+                  <label for="theme">Aniversário</label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/infantil.png" alt="">
+                  <input type="radio" name="theme" value="children's" id="children's" aria-label="Tema de Infantil">
+                  <label for="theme">Infantil</label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/formatura.png" alt="">
+                  <input type="radio" name="theme" value="graduation" id="graduation" aria-label="Tema de formatura">
+                  <label for="theme">Formatura</label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/casamento.png" alt="">
+                  <input type="radio" name="theme" value="marriage" id="marriage" aria-label="Tema de casamento">
+                  <label for="theme">Casamento</label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/cha de bebe.png" alt="">
+                  <input type="radio" name="theme" value="baby shower" id="baby shower" aria-label="Tema de chá de bebe">
+                  <label for="theme">Chá de bebê </label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/cha de panela.png" alt="">
+                  <input type="radio" name="theme" value="bridal shower" id="bridal shower" aria-label="Tema de chá de panela">
+                  <label for="theme">Chá de panela </label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/carnaval.png" alt="">
+                  <input type="radio" name="theme" value="carnival" id="carnival" aria-label="Tema de carnaval">
+                  <label for="theme">Carnaval </label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/pascoa.png" alt="">
+                  <input type="radio" name="theme" value="easter" id="easter" aria-label="Tema de páscoa">
+                  <label for="theme">Páscoa </label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/sao joao.png" alt="">
+                  <input type="radio" name="theme" value="Saint John" id="Saint John" aria-label="Tema de São João">
+                  <label for="theme">São João </label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/Halloween.png" alt="">
+                  <input type="radio" name="theme" value="halloween" id="halloween" aria-label="Tema de Halloween">
+                  <label for="theme">Halloween </label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/natal.png" alt="">
+                  <input type="radio" name="theme" value="Christmas" id="Christmas" aria-label="Tema de natal">
+                  <label for="theme">Natal </label>
+                </div>
+
+                <div class="radio-theme-inner">
+                  <img src="./images/Outro.png" alt="">
+                  <input type="radio" name="theme" value="other" id="other" aria-label="Outro Tema">
+                  <label for="theme">Outro </label>
+                </div>
+              </div>
+            </div>
+
+            <div class=" styles-container flex">
+              <div class="checkbox-wrapper flex-1">
+                <h3>Estilo</h3>
+                <div class="checkbox-container flex">
+                  <input type="checkbox" id="style" name="style">
+                  <label class="switch" for="style">
+                    <span class="slider"></span>
+                  </label>
+                </div>
               </div>
 
+              <div class="droparea-wrapper flex-2">
+                <label for="Cover-photo">Foto de capa</label>
+                <div class="flex">
+                  <div class="dropzone flex">
+                    <input type="file" name="Cover-photo" id="Cover-photo" required>
+                    <img src="./images/icons/upload.svg" alt="Icone de upload">
+                    <span>Selecionar</span>
+                  </div>
+                  <span>Nenhum arquivo selecionado</span>
+                </div>
+
+                <div class="error">
+                  <img src="./images/icons/circle-alert.svg" alt="icone de alerta">
+                  <span>Error message</span>
+                </div>
               </div>
 
 
             </div>
+
 
 
 

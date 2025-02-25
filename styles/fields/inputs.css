@@ -59,7 +59,7 @@ textarea:invalid {
 
 } 
 
-input:valid:focus {
+input[type=text]:valid:focus {
   outline: 1px solid var(--brand-light);
   
 }

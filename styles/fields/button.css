@@ -1,0 +1,13 @@
+.actions-wrapper {
+  justify-content: end;
+}
+
+.generate-btn {
+  background-color:var(--brand-dark);
+  padding: .8125rem 1.125rem;
+  border-radius: .5rem;
+  color:var(--text-heading);
+  font: var(--body-md);
+  cursor: pointer;
+ 
+} 

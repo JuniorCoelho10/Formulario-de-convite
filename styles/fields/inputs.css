@@ -1,4 +1,6 @@
 @import url(./radio.css);
+@import url(./checkbox.css);
+@import url(./droparea.css);
 
 
 input, textarea, select {
@@ -44,16 +46,7 @@ textarea:focus {
   outline: 1px solid var(--brand-light);
  } 
 
-input[required] + .error, 
-textarea[required] + .error {
-  
 
-  &:valid + .error {
-    display: none;
-  }
-
-
-}
 
 input:invalid,  
 textarea:invalid {
@@ -66,7 +59,29 @@ textarea:invalid {
 
 } 
 
+input:valid:focus {
+  outline: 1px solid var(--brand-light);
+  
+}
+
+input:valid + .error,
+textarea:valid + .error{
+
+  display: none;
+
+}
+
 textarea + .error {
   margin-bottom: 3rem;
 }
 
+textarea:valid  {
+  margin-bottom: 3rem;
+}
+
+
+
+.flex:has(label[for=mail]) {
+  border-bottom: 1px solid var(--input-stroke);
+  padding-bottom: 3rem;
+}
